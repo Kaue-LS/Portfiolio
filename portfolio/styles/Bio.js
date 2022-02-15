@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const Bio=styled.div`
 
-    background-color: aliceblue;
+    background-color: white;
     padding: 1rem 3rem;
-    margin: 0 0 0 auto;
     
 `
 
-export const Title=styled.h1``
-export const Paragraph=styled.div``
+export const Title=styled.h1`
+    text-transform: uppercase;
+
+`
+export const Paragraph=styled.div`
+p{
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 60px;
+}
+`

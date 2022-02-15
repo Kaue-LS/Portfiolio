@@ -1,15 +1,30 @@
-import * as S from '../../styles/Bio'
-export default function Bio(){
-    return(
-        <div>
-        <S.Bio>
+import * as S from "../../styles/Bio";
+export default function Bio() {
+  return (
+    <div>
+      <S.Bio id="Bio">
         <S.Title>Sobre Mim</S.Title>
         <S.Paragraph>
-            <p>  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate elementum ullamcorper. Morbi iaculis augue at tempus dictum. Vivamus malesuada, metus non pulvinar aliquam, mauris lorem mattis purus, at volutpat dui tortor eu metus. Morbi porta sem a turpis fermentum tempus. Nunc tempus aliquam magna. Sed rhoncus est a euismod accumsan. Maecenas neque massa, pretium id leo suscipit, sollicitudin sagittis sem. Suspendisse in dolor quis arcu gravida vestibulum. Praesent fermentum ex ac leo consectetur aliquet. Donec sagittis porttitor eros, ut tempor lacus pharetra et.
-
-Fusce viverra turpis at elementum posuere. Suspendisse a dolor est. Etiam ultrices libero vestibulum orci bibendum sagittis vel eget nisl. Quisque lacus leo, suscipit non odio sit amet, malesuada elementum massa. Morbi vitae molestie est, id volutpat purus. Sed tortor nunc, malesuada non finibus non, dapibus sed purus. Pellentesque a dui sem. Ut lacinia vitae justo sed scelerisque. Nullam et metus lorem.  </p>
+          <p>
+            Meu nome é <strong>Kauê Leite</strong>, sou de São Paulo e moro na
+            zona leste. Estudei meu ensino médio em 2019 no interior em uma
+            cidade chamada Ilha Solteira, integrado ao curso de{" "}
+            <strong>Análise e Desenvolvimento de Sistemas</strong> na{" "}
+            <strong>ETEC Centro Paula Souza</strong>.<br></br>
+            Nesse tempo, comecei a me interessar na área de informática,
+            aprendendo sobre banco de dados, lógica na programação, e também as
+            suas linguagens. Com o passar do tempo eu ainda estava decidindo o
+            que exatamente eu queria trabalhar no futuro, então eu decidi em me
+            especializar em <strong>programação web </strong>.<br></br>
+           
+          </p>
+          <p> Na metade do meu ensino médio eu comecei a tomar iniciativa em me
+            especializar nessa área, me inscrevendo também em um curso online,
+            na <strong>Blue Edtech</strong> aprendendo a ser{" "}
+            <strong>desenvolvedor Front-End</strong>, na qual estou aprendendo
+            até hoje.</p>
         </S.Paragraph>
-        </S.Bio>
-        </div>
-    )
+      </S.Bio>
+    </div>
+  );
 }

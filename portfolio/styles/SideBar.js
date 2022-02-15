@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const SideButton=styled.div`
     display: flex;
-   
+   position: fixed;
     
 `
 export const Button=styled.div`
@@ -32,10 +32,12 @@ export const Button=styled.div`
 `
 export const SideBar=styled.div`
     background-color: #171717;
-    width: 20rem;
     height: 100%;
     display: flex;
+    padding: 20px 20px;
     flex-direction: column;
+    box-shadow: 0px 0px 30px;
+    z-index: 999999;
     @media (max-width:768px) {
     display:none ;
     }

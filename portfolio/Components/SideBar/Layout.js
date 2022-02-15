@@ -1,6 +1,6 @@
 import * as S from '../../styles/SideBar'
 import { useState } from 'react'
-export default function SideBar(){
+export default function SideBar({children}){
     const [open,setOpen]=useState(true)
 
     const OpenBar=(props)=>{
@@ -68,7 +68,7 @@ export default function SideBar(){
         <button  onClick={()=>OpenBar(!open)}><span className={open?'fa fa-angle-left':'fa fa-angle-right'}></span></button>
         </S.Button>
         </S.SideButton>
-   
+        {children}
         </div>
     )
 }
