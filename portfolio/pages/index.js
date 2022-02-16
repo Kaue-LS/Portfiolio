@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Bio from "../Components/Bio/Layout";
+import Project from "../Components/project/layout";
 
 export default function Home() {
   return (
@@ -36,6 +36,7 @@ export default function Home() {
         <h3 className={styles.SubTitle}>Portfólio</h3>
         </div>
       <Bio></Bio>
+      <Project></Project>
       </main>
       
     </div>
