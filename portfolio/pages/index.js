@@ -1,9 +1,13 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Bio from "../Components/Bio/Layout";
-import Project from "../Components/project/layout";
+import Project from "../Components/project/Layout/layout";
+import { getAllPosts} from '../lib/Projects'
+import MoreProjects from "../Components/project/Layout/MoreProject";
 
-export default function Home() {
+export default function Home({allPosts}) {
+  const heroPost = allPosts[0]
+  const morePosts = allPosts.slice(1)
   return (
     <div >
       <Head>
@@ -36,9 +40,34 @@ export default function Home() {
         <h3 className={styles.SubTitle}>Portfólio</h3>
         </div>
       <Bio></Bio>
-      <Project></Project>
+      {heroPost && (
+            <Project
+              title={heroPost.title}
+              coverImage={heroPost.coverImage}
+              date={heroPost.date}
+              author={heroPost.author}
+              slug={heroPost.slug}
+              excerpt={heroPost.excerpt}
+            />
+          )}
+          {morePosts.length > 0 && <MoreProjects posts={morePosts} />}
+
       </main>
       
     </div>
   );
+}
+export async function getStaticProps() {
+  const allPosts = getAllPosts([
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+  ])
+
+  return {
+    props: { allPosts },
+  }
 }

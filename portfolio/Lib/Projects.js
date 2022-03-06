@@ -1,60 +1,43 @@
 import fs from 'fs'
-import path from 'path'
+import { join } from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
 
+const postsDirectory = join(process.cwd(), '_posts')
 
-const CaminhoDoDiretorio= path.join(process.cwd(),'../posts/Projetos');
-
-export function PegarPostsPorData(){
-    const NomeDosArquivos=fs.readSync(CaminhoDoDiretorio);
-    const dadosDosPost=NomeDosArquivos.map(arquivo=>{
-        const id= arquivo.replace(/\.md$/,'')
-
-        const caminhoDeCadaPost=path.join(CaminhoDoDiretorio,arquivo)
-
-        const conteudoDoArquivo=fs.readFileSync(caminhoDeCadaPost)
-
-        const formatadorMatter=matter(conteudoDoArquivo)
-
-        return{
-            id,...formatadorMatter.data
-        }
-
-    })  
-    return dadosDosPost.sort((a,b)=>{
-        if (a.date < b.date) {
-            return 1
-          } else {
-            return -1
-          }
-    }) 
+export function getPostSlugs() {
+  return fs.readdirSync(postsDirectory)
 }
-export function pegarTodosOsIds() {
-    const nomeDosArquivos = fs.readdirSync(CaminhoDoDiretorio)
-    return nomeDosArquivos.map( arquivo => {
-      return {
-        params: {
-          id: arquivo.replace(/\.md$/, '')
-        }
-      }
-    })
-  }
 
-export async function PegarDadosDosPost(id){
-    const caminhoDooArquivo = path.join(CaminhoDoDiretorio,`${id}.md`)
-    const conteudoDoArquivo=fs.readFileSync(caminhoDooArquivo,'utf-8')
-    const formatadorMatter=matter(conteudoDoArquivo)
-    const conteudoProcessado=await remark()
-    .use(html)
-    .process(formatadorMatter.content)
+export function getPostBySlug(slug, fields = []) {
+  const realSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
 
-    const conteudoHtml=conteudoProcessado.toString()
+  const items = {}
 
-    return{
-        id,
-        conteudoHtml,
-        ...formatadorMatter.data
+  // Ensure only the minimal needed data is exposed
+  fields.forEach((field) => {
+    if (field === 'slug') {
+      items[field] = realSlug
     }
+    if (field === 'content') {
+      items[field] = content
+    }
+
+    if (typeof data[field] !== 'undefined') {
+      items[field] = data[field]
+    }
+  })
+
+  return items
+}
+
+export function getAllPosts(fields = []) {
+  const slugs = getPostSlugs()
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  return posts
 }
