@@ -2,7 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Bio from "../Components/Bio/Layout";
 import Project from "../Components/project/Layout/layout";
-import { getAllPosts} from '../lib/Projects'
+import { getAllPosts} from '../Lib/Projects'
 import MoreProjects from "../Components/project/Layout/MoreProject";
 
 export default function Home({allPosts}) {
