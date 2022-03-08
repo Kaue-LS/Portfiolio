@@ -6,7 +6,6 @@ import { getAllPosts} from '../Lib/Projects'
 
 export default function Home({allPosts}) {
   const heroPost = allPosts
-  console.log(heroPost)
   return (
     <div >
       <Head>
