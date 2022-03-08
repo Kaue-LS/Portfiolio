@@ -49,7 +49,7 @@ export default function SideBar({children}){
             <img src='https://avatars.githubusercontent.com/u/79471947?v=4' alt='Kaue-LS'/>
             <S.Links>
             <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/kau%C3%AA-leite-8bb83320b/'><i className="fa fa-linkedin" ></i></a>
-            <a target="_blank" rel="noopener noreferrer" href='https://github.com/'> <i className="fa fa-github" ></i></a>
+            <a target="_blank" rel="noopener noreferrer" href='https://github.com/Kaue-LS'> <i className="fa fa-github" ></i></a>
             <a target="_blank" rel="noopener noreferrer" href='mailto:kaue.ls0506@gmail.com?subject=Mail from gmail.com'> <i className="fa fa-envelope" ></i>  </a>
             </S.Links>
             </S.PerfilLinks>
