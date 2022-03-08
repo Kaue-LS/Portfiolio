@@ -31,6 +31,7 @@ export const Button=styled.div`
 
 `
 export const SideBar=styled.div`
+position:fixed ;
     background-color: #171717;
     height: 100%;
     display: flex;

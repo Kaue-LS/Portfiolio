@@ -8,9 +8,16 @@
   justify-content: center;
   align-content: center;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
+  width: 80%;
 }
-
+.projects{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;  
+}
 /* ============================ */
 #Texts{
   width: 100%;
@@ -41,6 +48,9 @@
   .SubTitle{
     font-size: 3rem;
     color: #ffffff;
+}
+.main{
+  width: 100%;
 }
 }
 @keyframes animate {

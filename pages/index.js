@@ -1,13 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Bio from "../Components/Bio/Layout";
-import Project from "../Components/project/Layout/layout";
+import Bio from "../Components/Bio";
+import Project from "../Components/project/Card/Card";
 import { getAllPosts} from '../Lib/Projects'
-import MoreProjects from "../Components/project/Layout/MoreProject";
 
 export default function Home({allPosts}) {
-  const heroPost = allPosts[0]
-  const morePosts = allPosts.slice(1)
+  const heroPost = allPosts
+  console.log(heroPost)
   return (
     <div >
       <Head>
@@ -20,9 +19,7 @@ export default function Home({allPosts}) {
         ></link>
       </Head>
   
-
-      <main className={styles.main}>
-        <ul className={styles.background}>
+      <ul className={styles.background}>
           <li></li>
           <li></li>
           <li></li>
@@ -34,24 +31,27 @@ export default function Home({allPosts}) {
           <li></li>
           <li></li>
         </ul>
+      <main className={styles.main}>
+      
      
       <div id={styles.Texts}>
         <h1 className={styles.Title}>Kauê Leite</h1>
         <h3 className={styles.SubTitle}>Portfólio</h3>
+      </div>
+      <Bio ></Bio>
+      <div className={styles.projects} id={'Projetos'}>
+    
+          {heroPost.map((item,index)=>(
+             <Project key={index}
+               title={item.title}
+               coverImage={item.coverImage}
+               date={item.date}
+               author={item.author}
+               slug={item.slug}
+               excerpt={item.excerpt}
+             />
+          ))}
         </div>
-      <Bio></Bio>
-      {heroPost && (
-            <Project
-              title={heroPost.title}
-              coverImage={heroPost.coverImage}
-              date={heroPost.date}
-              author={heroPost.author}
-              slug={heroPost.slug}
-              excerpt={heroPost.excerpt}
-            />
-          )}
-          {morePosts.length > 0 && <MoreProjects posts={morePosts} />}
-
       </main>
       
     </div>

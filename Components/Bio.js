@@ -1,4 +1,4 @@
-import * as S from "../../styles/Bio";
+import * as S from "../styles/Bio";
 export default function Bio() {
   return (
     <div>
