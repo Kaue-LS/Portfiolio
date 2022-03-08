@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import PostBody from "../../Components/project/ProjectBody";
 import PostHeader from "../../Components/project/ProjectHead";
 import {getAllPosts,getPostBySlug} from '../../Lib/Projects'
-import markdownToHtml from '../../lib/markdownToHtml'
+import markdownToHtml from '../../Lib/markdownToHtml'
 export default function Posts ({post,morePosts,preview}){
     const router = useRouter()
     if(!router.isFallback && !post?.slug){
