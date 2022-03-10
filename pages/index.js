@@ -1,24 +1,26 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Bio from "../Components/Bio";
+import * as S from '../public/styles/Home'
+import Bio from "../Components/Bio/Bio";
 import Project from "../Components/project/Card/Card";
+import SideBar from "../Components/Global/NavBar";
 import { getAllPosts} from '../Lib/Projects'
 
 export default function Home({allPosts}) {
   const heroPost = allPosts
   return (
-    <div >
+  <SideBar>
+  
       <Head>
         <title>Porfólio Kaue-LS</title>
         <meta name="description" content="Portfólio" />
+        <meta lang="pt-br"></meta>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
       </Head>
-  
-      <ul className={styles.background}>
+      <S.Background>
           <li></li>
           <li></li>
           <li></li>
@@ -29,16 +31,16 @@ export default function Home({allPosts}) {
           <li></li>
           <li></li>
           <li></li>
-        </ul>
-      <main className={styles.main}>
+        </S.Background>
+      <S.Main>
       
      
-      <div id={styles.Texts}>
-        <h1 className={styles.Title}>Kauê Leite</h1>
-        <h3 className={styles.SubTitle}>Portfólio</h3>
-      </div>
+      <S.Texts>
+        <S.Title>Kauê Leite</S.Title>
+        <S.SubTitle>Portfólio</S.SubTitle>
+      </S.Texts>
       <Bio ></Bio>
-      <div className={styles.projects} id={'Projetos'}>
+      <S.Project id={'Projetos'}>
     
           {heroPost.map((item,index)=>(
              <Project key={index}
@@ -50,10 +52,10 @@ export default function Home({allPosts}) {
                excerpt={item.excerpt}
              />
           ))}
-        </div>
-      </main>
+        </S.Project>
+      </S.Main>
       
-    </div>
+    </SideBar>
   );
 }
 export async function getStaticProps() {

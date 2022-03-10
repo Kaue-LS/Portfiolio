@@ -1,9 +1,8 @@
 import Link from "next/link";
-import * as S from '../../../styles/Projects'
-import CoverImage from "./CoverImages";
+import * as S from '../../../public/styles/Projects'
+import CoverImage from "../../Global/CoverImages";
 import  Date from './date'
 export default function Card(dadosDosPost){
-    console.log(dadosDosPost)
     return(
       
         <S.Project>

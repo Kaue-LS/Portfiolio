@@ -1,43 +1,42 @@
-import { Head } from "next/document";
 import { useRouter } from "next/router";
-import PostBody from "../../Components/project/ProjectBody";
-import PostHeader from "../../Components/project/ProjectHead";
+import * as S from '../../public/styles/Slug'
+import Container from "../../Components/slug/Container";
+import Header from "../../Components/slug/Header";
+import Layout from "../../Components/slug/Layout";
 import {getAllPosts,getPostBySlug} from '../../Lib/Projects'
 import markdownToHtml from '../../Lib/markdownToHtml'
-export default function Posts ({post,morePosts,preview}){
-    const router = useRouter()
-    if(!router.isFallback && !post?.slug){
-        return 'Deu Ruim'
-    }
+import Article from "../../Components/slug/Article";
+import CoverImage from "../../Components/slug/CoverImages";
+export default function Post({ post }) {
+  const router = useRouter()
+  if (!router.isFallback && !post?.slug) {
+    return <h1>Deu ruim</h1>
+  }
 
-    return(
-        <div>
-            {router.isFallback?(
-                <h1>Carregando</h1>
-            ):(
-                <>
-                <article>
-                    <Head>
-                        <title>
-                            {post.title }| Blog Next Portfólio
-                        </title>
-                        <meta property="og:image"></meta>
-                    </Head>
-                    <PostHeader
-                    title={post.title}
-                    coverImage={post.coverImage}
-                    date={post.date}
-                    author={post.author}
-                    />
-                    <PostBody content={post.content}/>
-                </article>
-                </>
-            )}
-        </div>
-    )
+  return (
+    <S.Slug>
+    <Header />
+    <Layout post={post.title}>
+        {router.isFallback ? (
+          <h2>Loading…</h2>
+        ) : (
+          <S.Post>
+            <S.Image>
+            <CoverImage src={post.coverImage} alt={post.title} slug={post.slug} height={600} width={1000}></CoverImage>
+            </S.Image>
+            <Container>
+              <Article  content={post.content}/>
+            </Container>
+          
+            
+          </S.Post>
+        )}
+    </Layout>
+    </S.Slug>
+  )
 }
 export async function getStaticProps({ params }) {
-  const post = getPostBySlug(params.slug, [
+  const post= getPostBySlug(params.slug, [
     'title',
     'date',
     'slug',
@@ -46,8 +45,7 @@ export async function getStaticProps({ params }) {
     'ogImage',
     'coverImage',
   ])
-  const content = await markdownToHtml(post.content || '')
-
+  const content = await markdownToHtml(post.content || '' ) 
   return {
     props: {
       post: {

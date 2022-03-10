@@ -1,15 +1,31 @@
-import '../styles/globals.css';
-import SideBar from '../Components/NavBar';
+import"../public/styles/Globals.css";
 
-function MyApp({ Component, pageProps }) {
+
+
+function SafeHydrate({ children }) {
   return (
-    <div style={{display:'flex',flexDirection:'row', justifyContent:'space-evenly'}}>
-      <SideBar>
-      
-    <Component {...pageProps} />
-    </SideBar>
+    <div suppressHydrationWarning>
+      {typeof window === 'undefined' ? null : children}
     </div>
-  );
+  )
 }
+export default function MyApp({Component,pageProps}){
 
-export default MyApp;
+ 
+    return(
+      <SafeHydrate>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: "space-evenly",
+        }}
+      >
+          <Component {...pageProps} />
+      </div>
+    </SafeHydrate>
+
+    )
+  }
+
