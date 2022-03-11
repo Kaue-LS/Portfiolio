@@ -1,5 +1,5 @@
 ---
-title: 'Portifólio'
+title: 'Portfólio'
 excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/img/Portifolio.jpg'
 date: '2022-03-08T05:35:07.322Z'
