@@ -1,19 +1,19 @@
 import * as S from '../../public/styles/SideBar'
 import { useState } from 'react'
 export default function SideBar({children}){
-    const [open,setOpen]=useState(true)
-
+    const [open,setOpen]=useState(false)
     const OpenBar=(props)=>{
         if(props){
             setOpen(props)
             document.getElementById('MoveBar').style=`
-                margin:0  0 0 -20rem;
+                margin:0 0;
             `
         }
         else{
             setOpen(props)
             document.getElementById('MoveBar').style=`
-            margin:0 0;
+            margin:0  0 0 -20rem;
+
 
         `
 

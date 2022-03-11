@@ -4,6 +4,7 @@ export const SideButton=styled.div`
     display: flex;
    position: fixed;
    z-index:99999;
+   margin:0  0 0 -20rem;
     
 `
 export const Button=styled.div`
@@ -54,6 +55,7 @@ export const SideBarMobile=styled.div`
     height: 100%;
     display: flex;
     flex-direction: column;
+    
     }
 `
 
