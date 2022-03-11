@@ -16,5 +16,9 @@ p{
     text-align: justify;
     line-height: 30px;
     text-indent: 60px;
+    @media(max-width:780px){
+        text-indent: 20px;
+
+  }
 }
 `
