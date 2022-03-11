@@ -1,12 +1,14 @@
-import Link from 'next/link'
 import * as S from '../../public/styles/Slug'
-export default function Header({children}) {
+import Link from 'next/link'
+
+export default function Footer({post}) {
   return (
-    <S.Back>
-      <Link href="/">
+    <S.Header>
+         <Link href="/">
         <a className="hover:underline">Voltar</a>
       </Link>
-      
-    </S.Back>
+        <h1>{post}</h1>
+       
+    </S.Header>
   )
 }

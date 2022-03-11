@@ -20,7 +20,21 @@ export const Background=styled.ul`
   height: 20px;
   background: rgba(255, 255, 255, 0.2);
   animation: animate 19s linear infinite;
+  @keyframes animate {
 
+0%{
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+}
+
+100%{
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+}
+
+}
   :nth-child(0){
     left: 7%;
   width: 122px;
@@ -122,11 +136,21 @@ width: 100%;
 
 export const Title=styled.h1`
  font-size: 8rem;
-  color: #ffffff;`
+  color: #ffffff;
+  @media(max-width:780px){
+    font-size:4rem;
+
+  }
+`
 
 export const SubTitle=styled.h3`
 font-size: 6rem;
-  color: #ffffff;`
+  color: #ffffff;
+  @media(max-width:780px){
+    font-size:4rem;
+
+  }
+  `
 export const Project=styled.div`
   background-color: white;
   display: flex;
@@ -135,3 +159,4 @@ export const Project=styled.div`
   justify-content: space-evenly;  
 
 `
+

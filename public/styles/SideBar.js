@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const SideButton=styled.div`
     display: flex;
    position: fixed;
+   z-index:99999;
     
 `
 export const Button=styled.div`
