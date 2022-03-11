@@ -14,7 +14,7 @@ export const Button=styled.div`
             display: block;
             position: fixed;
             z-index: 999999;
-            margin: 400px 320px;
+            margin: 250px 320px;
             button{
             
             height: 70px;
