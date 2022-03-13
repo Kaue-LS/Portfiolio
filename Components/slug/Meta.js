@@ -34,7 +34,7 @@ export default function Meta({post}) {
       <meta
         name="description"
       />
-      <meta lang='pt-br'></meta>
+      <meta lang='pt-BR'></meta>
       <title>{post}</title>
     </Head>
   )

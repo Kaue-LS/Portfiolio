@@ -1,11 +1,10 @@
 ---
 title: 'Chainsaw Man'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+utilizado: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/img/Chainsaw.jpg'
+projectUrl: 'https://github.com/Kaue-LS/Projeto-temaLivre'
 date: '2022-03-08T05:35:07.322Z'
-author:
-  name: Kauê
-  picture: '/assets/img/HiddenCript.jpg'
+tools: 'React.js / Rest API / SCSS / Styled-Components '
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---

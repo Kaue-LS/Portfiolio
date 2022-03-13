@@ -1,11 +1,10 @@
 ---
 title: 'Rick and Morty API'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+utilizado: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
 coverImage: '/assets/img/RickAndMorty.jpg'
+projectUrl: 'https://github.com/Kaue-LS/RickAndMorty-React'
 date: '2022-03-08T05:35:07.322Z'
-author:
-  name: Kauê
-  picture: '/assets/blog/authors/joe.jpeg'
+tools: 'React.js / Scss / BEM Css / FetchApi / RickAndMorty API'
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

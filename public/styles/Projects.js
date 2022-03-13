@@ -19,6 +19,7 @@ export const Card=styled.div`
     flex-direction:column ;
     justify-content:center ;
     align-items: center;
+    cursor: pointer;
 
     div{
         overflow:hidden ;

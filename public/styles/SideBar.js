@@ -98,6 +98,11 @@ export const Topics=styled.div`
         color: #ffffff;
         list-style: inside;
         margin: 15px 1rem;
+        transition:400ms ;
+
+        :hover{
+            color: #00F0FF ;
+        }
     }
 
 `

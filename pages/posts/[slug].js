@@ -28,9 +28,18 @@ export default function Post({ post }) {
                 alt={post.title}
                 slug={post.slug}
                 height={600}
-                width={1000}
+                width={1200}
               ></CoverImage>
             </S.Image>
+            <S.Data>
+              <div>
+              <p>Feito em:</p> 
+              <span>{post.tools}</span>
+              </div>
+              <div>
+              <p>Link do projeto: </p> {post.projectUrl?(<a target="_blank" rel="noopener noreferrer"  href={post.projectUrl}>Aqui</a>):(<span>Sem link  <img src="https://img.icons8.com/windows/32/000000/oops.png"/></span>)}
+              </div>
+            </S.Data>
             <Container>
               <Article content={post.content} />
             </Container>
@@ -46,7 +55,8 @@ export async function getStaticProps({ params }) {
     "title",
     "date",
     "slug",
-    "author",
+    "tools",
+    "projectUrl",
     "content",
     "ogImage",
     "coverImage",

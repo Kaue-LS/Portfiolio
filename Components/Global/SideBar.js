@@ -7,13 +7,14 @@ export default function SideBar({children}){
             setOpen(props)
             document.getElementById('MoveBar').style=`
                 margin:0 0;
+                transition:400ms;
             `
         }
         else{
             setOpen(props)
             document.getElementById('MoveBar').style=`
             margin:0  0 0 -20rem;
-
+            transition:400ms;
 
         `
 
@@ -37,7 +38,7 @@ export default function SideBar({children}){
                     <a href='#Bio'><li>Bio</li></a>
                     <a href='#Projetos'><li>Projetos</li></a>
                     <a href='#Habilidades'><li>Habilidades</li></a>
-                    <a href='#FaleComigo'><li>Fale comigo</li></a>
+                    {/* <a href='#FaleComigo'><li>Fale comigo</li></a> */}
                 </ul>
                 </nav>
             </S.Topics>
@@ -58,7 +59,7 @@ export default function SideBar({children}){
                     <a href='#Bio'><li>Bio</li></a>
                     <a href='#Projetos'><li>Projetos</li></a>
                     <a href='#Habilidades'><li>Habilidades</li></a>
-                    <a href='#FaleComigo'><li>Fale comigo</li></a>
+                    {/* <a href='#FaleComigo'><li>Fale comigo</li></a> */}
                 </ul>
                 </nav>
             </S.Topics>

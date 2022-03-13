@@ -3,6 +3,7 @@ import * as S from '../../../public/styles/Projects'
 import CoverImage from "../../Global/CoverImages";
 import  Date from './date'
 export default function Card(dadosDosPost){
+    console.log(dadosDosPost)
     return(
       
         <S.Project>
@@ -15,7 +16,7 @@ export default function Card(dadosDosPost){
             <S.Data>
             <span>Publicado em: </span><Date dateString={dadosDosPost.date}></Date>
             <h1>{dadosDosPost.title}</h1>
-            <p>{dadosDosPost.excerpt}</p>
+            <p>{dadosDosPost.utilizado}</p>
             </S.Data>
             </S.Card>
             </Link>

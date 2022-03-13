@@ -132,6 +132,7 @@ width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  
 `
 
 export const Title=styled.h1`
@@ -151,12 +152,27 @@ font-size: 6rem;
 
   }
   `
-export const Project=styled.div`
+export const ProjectArea=styled.div`
   background-color: white;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;  
 
+  #Title-Project{
+    width:100%;
+    padding:0 50px;
+    text-transform:uppercase;
+  }
+
 `
 
+export const SkillsArea = styled.div`
+  background-color: white;
+  padding:10px 50px ;
+
+#Title-Skills{
+    width:100%;
+    text-transform:uppercase;
+  }
+`
