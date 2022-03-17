@@ -9,7 +9,7 @@ import Skills from "../Components/Skills/Skills";
 export default function Home({allPosts}) {
   const heroPost = allPosts
   return (
-  <SideBar>
+  <SideBar >
   
       <Head>
         <title>Porfólio Kaue-LS</title>

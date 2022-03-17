@@ -3,7 +3,8 @@ import styled from 'styled-components'
 
 export const Slug=styled.div`
     width:80% ;
-    margin:4rem auto;
+    margin:0rem auto;
+    padding:20px 20px ;
 
     @media(max-width:780px){
         width:90%
@@ -12,65 +13,65 @@ export const Slug=styled.div`
 `
 
 export const Back=styled.div`
-    background-color: #121212 ;
-    margin: 1rem auto 0rem auto;
-    border:2px solid #ffffff;
-    padding:15px 10px ;
-    border-bottom-left-radius:10px;
-    border-bottom-right-radius:10px;
+border-bottom-left-radius:10px ;
+border-bottom-right-radius:10px ;
+
+background-color: white;
+    padding:15px 30px ;
     color:white;
     font-size:1.5rem;
     font-weight:700;
-    a{
-        border:1px solid white;
-        padding:10px 10px ;
-        font-size:1.4rem;
+    width:100% ;
+    display:flex ;
+    justify-content:center ;
+    align-items:center ;
+    button{
+        background-color: #121212 ;
+        margin: 0 auto ;
+        padding: 10px 10px ;
+        width:50% ;
+        border:none;
+        font-weight:700 ;
         transition:400ms linear;
+
         :hover{
             background-color:#00F0FF ;
             border-radius:10px;
             color:black;
         }
+    }
+    a{
+        color: #ffffff;
+        font-size:1.4rem;
+      
     }
  
 `
 
 export const Header=styled.div`
     background-color: #121212 ;
-    margin: 0rem auto 1rem auto;
-    border:2px solid #ffffff;
     padding:10px 10px ;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
     color:white;
+    background-color:white ;
+    border-top-left-radius:10px ;
+border-top-right-radius:10px ;
     font-weight:700;
     display:flex ;
     flex-direction:row;
     justify-content:space-evenly;
     align-items:center;
-    a{
-        border:1px solid white;
-        padding:10px 10px ;
-        font-size:1.4rem;
-        transition:400ms linear;
-        :hover{
-            background-color:#00F0FF ;
-            border-radius:10px;
-            color:black;
-        }
-    }
     h1{
-        margin:  0px 0rem 0 20rem;
+        text-transform:uppercase ;
+        color: #000;
+        font-size:4rem ;
+        margin:  0px auto;
     }
 
     @media(max-width:780px){
         padding:10px 20px ;
-        flex-direction:column;
-        justify-content:center;
-    align-items:center;
-    h1{
-        text-align:center;
-    }
+        h1{
+            margin:10px auto ;
+        }
     }
 
 `
@@ -80,7 +81,6 @@ export const Post=styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    border:2px solid #ffffff;
 
 
 `
@@ -88,14 +88,15 @@ export const Post=styled.div`
 export const Image=styled.div`
     overflow:hidden;
     background-color:#f4f4f4;
-    width:100%;
+    width:95%;
     display:flex ;
     justify-content:center;
 `
 
 export const Data=styled.div`
     margin:0 0 0 0;
-    width:85% ;
+    padding:10px 30px ;
+    width:100% ;
     div{
         display:flex ;
         flex-direction:row;
@@ -118,7 +119,7 @@ export const Data=styled.div`
     }
 `
 export const Article=styled.article`
-    padding:10px 5rem ;
+    padding:10px 2rem ;
     text-align:justify;
     @media(max-width:780px){
         padding:15px 15px ;

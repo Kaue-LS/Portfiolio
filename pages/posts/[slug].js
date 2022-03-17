@@ -6,7 +6,7 @@ import Layout from "../../Components/slug/Layout";
 import { getAllPosts, getPostBySlug } from "../../Lib/Projects";
 import markdownToHtml from "../../Lib/markdownToHtml";
 import Article from "../../Components/slug/Article";
-import CoverImage from "../../Components/slug/CoverImages";
+import CoverImage from "../../Components/Global/CoverImages";
 import Header from "../../Components/slug/Header";
 export default function Post({ post }) {
   const router = useRouter();
@@ -26,7 +26,6 @@ export default function Post({ post }) {
               <CoverImage
                 src={post.coverImage}
                 alt={post.title}
-                slug={post.slug}
                 height={600}
                 width={1200}
               ></CoverImage>

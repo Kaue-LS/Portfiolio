@@ -1,18 +1,42 @@
 ---
-title: 'Cadastro'
-utilizado: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+title: 'Cadastro de clientes'
+utilizado: 'Projeto feito com modelo M.E.R.N  STACK com banco de dados mongoose na própria máquina, a página contém painel de administrador e página destinada para clientes.'
 coverImage: '/assets/img/Cadastro.jpg'
 projectUrl: 'https://github.com/Kaue-LS/Projeto-M.E.R.N'
 date: '2022-03-08T05:35:07.322Z'
-tools: 'M.E.R.N Stack / React.js / Node.js / Express.js / MongoDB / Axios / Rest API'
+tools: 'M.E.R.N Stack / React.js / Node.js / Express.js / Mongooose / Axios / Rest API'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+## Sobre o projeto:
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+O projeto foi feito com o objetivo de aprender sobre criação de rotas, autenticação e cadastro de ususarios feitos no Back-end. 
 
-## Lorem Ipsum
+## Estrutura:
+  Está dividido em duas pastas, uma de Back-End e outra Front-End
+  # Back-End:
+  Contém o banco de dados que pode ser inicializado na máquina, as pastas contém as principais funções:
+  
+  **-Models**: Responsável para a criar a estrutura do banco de dados.
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+  **-Controllers**: Realiza o CRUD (Create, Read, Update, Read) do banco de dados além de também as autentções do usuário.  
+
+  As rotas para realizar cada função está no arquivo **routes.js**.  <br />
+
+  Para iniciar é preciso ter instalado o **MongoCompass** e pegar o endereço que esta no **server.js** para ativar o banco de dados. Após isso, no terminal digite **node server.js** ou instale o **nodemon server.js** para alterar automaticamente o banco de dados caso haja aguma.
+
+
+## Front-End:
+  Localizada na pasta **cadastro**
+
+  # Estrutura:
+  **-Pages**: Contem as páginas do site. As **rotas** estão no arquivo **Router.js**.
+
+  **-Services**: Contém as condições para que o administrador tenha o sidebar e rotas privadas, autenticação jwt, e também a conexão da API.
+
+  **-Components**: Partes da página, como página não encontrada, navbar e sidebar.
+  
+  **-Styes**: A estilização da página.
+  
+

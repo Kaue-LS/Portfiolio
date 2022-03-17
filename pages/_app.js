@@ -14,7 +14,6 @@ export default function MyApp({Component,pageProps}){
  
     return(
       <SafeHydrate>
-
       <div
         style={{
           display: "flex",

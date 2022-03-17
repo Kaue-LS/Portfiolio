@@ -1,6 +1,6 @@
 ---
 title: 'Chainsaw Man'
-utilizado: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+utilizado: 'Objetivo de desenvolver uma API com o banco de dados criado pela BLUE EDTECH e utiliza-la em projeto React.js.'
 coverImage: '/assets/img/Chainsaw.jpg'
 projectUrl: 'https://github.com/Kaue-LS/Projeto-temaLivre'
 date: '2022-03-08T05:35:07.322Z'
@@ -9,10 +9,17 @@ ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+O objetivo era criar uma api feita pela Blue Edtech para realizar criação de una página com tema escolhido, eu decidi utilizar o tema de um mangá conhecido, Chainsaw Man.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+Para administrar a API eu utilizei o **Insomnia**.
 
-## Lorem Ipsum
+## Estrutura:
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+O projeto consiste em três pastas:
+
+ **-Api**: Pasta onde está a conexão a API, cada build com uma função CRUD, além das rotas desenvolvidas para executar as ações.
+
+ **-Components**: Estão os componentes das páginas como fontes, tema, ícone de carregamento e navbar.
+
+ **-Pages**: Estão as páginas do projeto nomeados de acordo as ações que irá realizar na API.
+

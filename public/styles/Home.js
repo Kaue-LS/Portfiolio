@@ -170,7 +170,10 @@ export const ProjectArea=styled.div`
 export const SkillsArea = styled.div`
   background-color: white;
   padding:10px 50px ;
+  @media(max-width:780px){
+    padding: 0px 20px ;
 
+  }
 #Title-Skills{
     width:100%;
     text-transform:uppercase;
