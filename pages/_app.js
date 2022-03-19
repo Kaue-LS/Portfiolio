@@ -1,4 +1,4 @@
-import"../public/styles/Globals.css";
+import"../public/assets/styles/Globals.css";
 
 
 
