@@ -9,6 +9,8 @@ export const Bio=styled.div`
 
 export const Title=styled.h1`
     text-transform: uppercase;
+    font-weight:900 ;
+    font-size:2.5rem ;
 
 `
 export const Paragraph=styled.div`

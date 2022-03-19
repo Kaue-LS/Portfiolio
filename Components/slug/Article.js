@@ -1,4 +1,4 @@
-import * as S from '../../public/styles/Slug'
+import * as S from '../../public/assets/styles/Slug'
 export default function Article({content}){
 
     return(

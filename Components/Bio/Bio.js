@@ -1,4 +1,4 @@
-import * as S from "../../public/styles/Bio";
+import * as S from "../../public/assets/styles/Bio";
 export default function Bio() {
   return (
     <div>
@@ -6,23 +6,21 @@ export default function Bio() {
         <S.Title>Sobre Mim</S.Title>
         <S.Paragraph>
           <p>
-            Meu nome é <strong>Kauê Leite</strong>, sou de São Paulo e moro na
-            zona leste. Estudei meu ensino médio em 2019 no interior em uma
-            cidade chamada Ilha Solteira, integrado ao curso de{" "}
-            <strong>Análise e Desenvolvimento de Sistemas</strong> na{" "}
-            <strong>ETEC Centro Paula Souza</strong>.<br></br>
-            Nesse tempo, comecei a me interessar na área de informática,
-            aprendendo sobre banco de dados, lógica na programação, e também as
-            suas linguagens. Com o passar do tempo eu ainda estava decidindo o
-            que exatamente eu queria trabalhar no futuro, então eu decidi em me
-            especializar em <strong>programação web </strong>.<br></br>
-           
+            Meu nome é <strong>Kauê Leite</strong>, nasci moro na cidade de <strong>São Paulo</strong> na zona
+            leste, gosto de ficar sempre perto de dispositivos eletrônicos como
+            consoles e computadores, tanto para jogar videogames como também
+            para programar,  pois, se eu não me irritar com chefão difícil, eu
+            fico com raiva pelo código não está funcionando.</p>
+            <p> 
+            Formado no curso técnico de <strong>Análise e Desenvolvimento de Sistemas na ETEC Centro
+            Paula Souza de Ilha Solteira</strong>, foi onde comecei a me interessar na
+            área de programação, aprendendo sobre banco de dados, análise de
+            sistemas, programação web, lógica de programação e também design. 
+            Hoje em dia estou estudando na <strong>Blue Edtech</strong>, um curso online de
+            programação, me ajudou a aprofundar mais a fundo sobre
+            desenvolvimento Front-end,  sendo a área onde estou procurando meu
+            primeiro emprego.
           </p>
-          <p> Na metade do meu ensino médio eu comecei a tomar iniciativa em me
-            especializar nessa área, me inscrevendo também em um curso online,
-            na <strong>Blue Edtech</strong> aprendendo a ser{" "}
-            <strong>desenvolvedor Front-End</strong>, na qual estou aprendendo
-            até hoje.</p>
         </S.Paragraph>
       </S.Bio>
     </div>

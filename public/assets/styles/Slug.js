@@ -7,7 +7,8 @@ export const Slug=styled.div`
     padding:20px 20px ;
 
     @media(max-width:780px){
-        width:90%
+        padding:10px 10px ;
+        width:100%
 
     }
 `
@@ -32,11 +33,12 @@ background-color: white;
         width:50% ;
         border:none;
         font-weight:700 ;
-        transition:400ms linear;
+        transition:400ms ;
 
         :hover{
             background-color:#00F0FF ;
             border-radius:10px;
+            color: #BEBEBE;
             color:black;
         }
     }
@@ -49,12 +51,9 @@ background-color: white;
 `
 
 export const Header=styled.div`
-    background-color: #121212 ;
     padding:10px 10px ;
     color:white;
-    background-color:white ;
-    border-top-left-radius:10px ;
-border-top-right-radius:10px ;
+
     font-weight:700;
     display:flex ;
     flex-direction:row;
@@ -62,25 +61,30 @@ border-top-right-radius:10px ;
     align-items:center;
     h1{
         text-transform:uppercase ;
-        color: #000;
-        font-size:4rem ;
+        color:#ffffff;
+        text-shadow: 0px 0px 10px  #BEBEBE ;
+        font-weight:900 ;
+        font-size:2.8rem ;
         margin:  0px auto;
     }
 
     @media(max-width:780px){
         padding:10px 20px ;
         h1{
+            text-align:center ;
+            font-size:2rem ;
             margin:10px auto ;
         }
     }
 
 `
 export const Post=styled.div`
+    border-top-left-radius:10px ;
+border-top-right-radius:10px ;
     background-color:#ffffff ;
+    padding:10px 0px ;
     display:flex ;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
 
 
 `
@@ -88,7 +92,8 @@ export const Post=styled.div`
 export const Image=styled.div`
     overflow:hidden;
     background-color:#f4f4f4;
-    width:95%;
+    width:100%;
+    margin:0 auto ;
     display:flex ;
     justify-content:center;
 `
@@ -113,9 +118,14 @@ export const Data=styled.div`
     }
     a{
         text-decoration:underline ;
+        padding:5px 5px ;
         margin: 0 0px 0 20px;
         font-size:1.5rem ;
         font-weight:700 ;
+
+        :hover{
+            
+        }
     }
 `
 export const Article=styled.article`

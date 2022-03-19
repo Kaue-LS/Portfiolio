@@ -1,4 +1,4 @@
-import * as S from '../../public/styles/SideBar'
+import * as S from '../../public/assets/styles/SideBar'
 import { useState } from 'react'
 export default function SideBar({children}){
     const [open,setOpen]=useState(false)
@@ -13,7 +13,7 @@ export default function SideBar({children}){
         else{
             setOpen(props)
             document.getElementById('MoveBar').style=`
-            margin:0  0 0 -20rem;
+            margin:0  0 0 -16rem;
             transition:400ms;
 
         `

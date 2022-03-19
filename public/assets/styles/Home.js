@@ -16,22 +16,26 @@ export const Background=styled.ul`
     position: absolute;
   display: block;
   list-style: none;
-  width: 20px;
-  height: 20px;
-  background: rgba(255, 255, 255, 0.2);
+  font-size:10rem ;
+  color: #ffffff60;
+
+
+
   animation: animate 19s linear infinite;
+
+
+
+
   @keyframes animate {
 
 0%{
     transform: translateY(0) rotate(0deg);
     opacity: 1;
-    border-radius: 0;
 }
 
 100%{
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
-    border-radius: 50%;
 }
 
 }
@@ -117,7 +121,7 @@ export const Main=styled.main`
   justify-content: center;
   align-content: center;
   overflow: hidden;
-  margin: 0 0 0 auto;
+  margin: 0 0 0 auto ;
   width: 80%;
   @media(max-width:760px) {
 
@@ -132,12 +136,14 @@ width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
-  
+
 `
 
 export const Title=styled.h1`
  font-size: 8rem;
   color: #ffffff;
+  text-shadow: 0px 0px 10px  #BEBEBE ;
+
   @media(max-width:780px){
     font-size:4rem;
 
@@ -147,6 +153,8 @@ export const Title=styled.h1`
 export const SubTitle=styled.h3`
 font-size: 6rem;
   color: #ffffff;
+  text-shadow: 0px 0px 10px  #BEBEBE ;
+
   @media(max-width:780px){
     font-size:4rem;
 
@@ -157,11 +165,19 @@ export const ProjectArea=styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;  
-
+  justify-content: space-between; 
+  padding :0 3rem ;
+  @media(max-width:780px){
+    padding:0 2rem ;
+  }
+  @media(max-width:480px){
+    justify-content:center ;
+  }
   #Title-Project{
     width:100%;
-    padding:0 50px;
+    font-weight:900 ;
+    font-size:2.5rem ;
+    padding:0 0px;
     text-transform:uppercase;
   }
 
@@ -176,6 +192,8 @@ export const SkillsArea = styled.div`
   }
 #Title-Skills{
     width:100%;
+    font-weight:900 ;
+    font-size:2.5rem ;
     text-transform:uppercase;
   }
 `

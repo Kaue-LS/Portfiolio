@@ -14,7 +14,7 @@ export const Button=styled.div`
             display: block;
             position: fixed;
             z-index: 999999;
-            margin: 250px 320px;
+            margin: 250px 255px;
             button{
             
             height: 70px;
@@ -49,7 +49,7 @@ export const SideBarMobile=styled.div`
     display: none;
     @media (max-width:768px) {    
     background-color: #171717;
-    width: 20rem;
+    width: 16rem;
     position: fixed;
     z-index: 999999;
     height: 100%;
@@ -66,6 +66,13 @@ export const PerfilLinks=styled.div`
         height: 230px;
         border: 3px solid white;
         border-radius: 100%;
+
+        @media (max-width:768px) {    
+            width: 150px;
+        height: 150px;
+        border: 3px solid white;
+        border-radius: 100%;
+    }
     }
 `
 export const Links=styled.div`
@@ -74,10 +81,12 @@ export const Links=styled.div`
     justify-content: space-evenly;
     margin: 20px auto;
     i{
+      
         font-size: 2rem;
         cursor: pointer;
+        border-radius:100% ;
         color: white;
-        transition: 300ms;
+        transition: 400ms ease-in-out;
         :hover{
             color: #00F0FF;
         }
@@ -99,7 +108,6 @@ export const Topics=styled.div`
         list-style: inside;
         margin: 15px 1rem;
         transition:400ms ;
-
         :hover{
             color: #00F0FF ;
         }

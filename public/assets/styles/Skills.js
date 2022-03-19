@@ -3,20 +3,15 @@ import styled from "styled-components";
 export const Skills = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center ;
+  flex-wrap:wrap ;
   border-radius:5px ;
   box-shadow:0px 0px 10px ;
   overflow:hidden ;
 
-  hr{
-  color: #000;
-  width:100% ;
-  background-color:black ;
-  }
 
-  @media (max-width: 780px) {
-    flex-direction: column;
-  }
+
 `;
 
 export const Container = styled.div`
@@ -24,17 +19,15 @@ export const Container = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  border-collapse: collapse;
   width: 50%;
   padding: 10px 10px;
-
   p {
     width: 100%;
     font-weight:700 ;
   }
 
   @media (max-width: 780px) {
-    width: 100%;
+    justify-content:space-between ;
   }
 `;
 
@@ -110,6 +103,12 @@ export const Box = styled.div`
   }
   .contextapi {
     width: 30%;
+    background-color: #00f0ff;
+    box-shadow:0px 0px 10px  #00f0ff ;
+    border-radius: 20px;
+  }
+    .mongodb {
+    width: 50%;
     background-color: #00f0ff;
     box-shadow:0px 0px 10px  #00f0ff ;
     border-radius: 20px;

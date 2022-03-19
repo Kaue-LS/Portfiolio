@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
-import * as S from "../../public/styles/Slug";
-import Container from "../../Components/slug/Container";
+import * as S from "../../public/assets/styles/Slug";
 import Footer from "../../Components/slug/Footer";
 import Layout from "../../Components/slug/Layout";
 import { getAllPosts, getPostBySlug } from "../../Lib/Projects";
@@ -39,9 +38,7 @@ export default function Post({ post }) {
               <p>Link do projeto: </p> {post.projectUrl?(<a target="_blank" rel="noopener noreferrer"  href={post.projectUrl}>Aqui</a>):(<span>Sem link  <img src="https://img.icons8.com/windows/32/000000/oops.png"/></span>)}
               </div>
             </S.Data>
-            <Container>
               <Article content={post.content} />
-            </Container>
           </S.Post>
         )}
       </Layout>

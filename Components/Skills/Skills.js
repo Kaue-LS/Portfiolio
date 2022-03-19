@@ -1,4 +1,4 @@
-import * as S from '../../public/styles/Skills'
+import * as S from '../../public/assets/styles/Skills'
 
 
 
@@ -76,6 +76,12 @@ export default function Skills() {
         <p>Context API:</p>
         <S.Box>
           <div className ="skills contextapi">30%</div>
+        </S.Box>
+      </S.Container>
+      <S.Container>
+        <p>MongoDB:</p>
+        <S.Box>
+          <div className ="skills mongodb">50%</div>
         </S.Box>
       </S.Container>
     </S.Skills>

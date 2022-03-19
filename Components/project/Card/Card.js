@@ -1,5 +1,5 @@
 import Link from "next/link";
-import * as S from '../../../public/styles/Projects'
+import * as S from '../../../public/assets/styles/Projects'
 import CoverImage from "../../Global/CoverImages";
 import  Date from './date'
 export default function Card(dadosDosPost){

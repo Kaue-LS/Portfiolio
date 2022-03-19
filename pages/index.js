@@ -1,5 +1,5 @@
 import Head from "next/head";
-import * as S from '../public/styles/Home'
+import * as S from '../public/assets/styles/Home'
 import Bio from "../Components/Bio/Bio";
 import Project from "../Components/project/Card/Card";
 import SideBar from "../Components/Global/SideBar";
@@ -15,27 +15,29 @@ export default function Home({allPosts}) {
         <title>Porfólio Kaue-LS</title>
         <meta name="description" content="Portfólio" />
         <meta lang="pt" xmlns="http://www.w3.org/1999/xhtml"/>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./public/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         ></link>
       </Head>
       <S.Background>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
+          <li>{"{K}"}</li>
         </S.Background>
-      <S.Main>
       
-     
+
+      
+      <S.Main> 
       <S.Texts>
         <S.Title>Kauê Leite</S.Title>
         <S.SubTitle>Portfólio</S.SubTitle>
