@@ -4,7 +4,7 @@
 
 ## Link do site hospedado no vercel:  https://portfolio-rho-eosin-60.vercel.app/
 
-# Projetos:
+### Projetos:
 - Os projetos estão na pasta "_posts" onde todos estão em arquivos md, na linguagem MarkDown, que são convertidos em HTML na pasta "libs".
 - Eles são chamados no arquivo index.js, e "[slug].js", além dos componentes na pasta "components" como converImage.
 
