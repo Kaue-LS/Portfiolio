@@ -15,7 +15,7 @@ export const Button=styled.div`
             position: fixed;
             z-index: 999999;
             margin: 250px 255px;
-            button{
+            /* button{
             
             height: 70px;
             width: 30px;
@@ -23,13 +23,23 @@ export const Button=styled.div`
             background: linear-gradient(90deg,#000000 2%, #171717 );
             border: none;
             border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px; */
             span{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 70px;
+            width: 30px;
+            color: #ffffff;
+            background: linear-gradient(90deg,#000000 2%, #171717 );
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
                 font-size: 2rem;
                 font-weight: 700;
             }
         }
-        }
+        /* } */
 
 `
 export const SideBar=styled.div`

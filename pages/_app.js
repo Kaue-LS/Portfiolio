@@ -2,6 +2,7 @@ import"../public/assets/styles/Globals.css";
 import React,{useState} from "react";
 import { ThemeProvider } from "styled-components";
 import SideBar from "../Components/Global/SideBar";
+import ToggleTheme from "../Components/Global/ToggleTheme";
 
 
 const LightTheme={
@@ -9,8 +10,8 @@ const LightTheme={
   titleColor:"#000000",
 }
 const DarkTheme={
-  pageBackground:'#696969',
-  titleColor:"#000000",
+  pageBackground:'#171717',
+  titleColor:"#ffffff",
 }
 const themes={
   light:LightTheme,
@@ -18,12 +19,19 @@ const themes={
 }
 export default function MyApp({Component,pageProps}){
   const [theme,setTheme]=useState('light')
-//   const themeToggler = () => {
-//     theme === 'light' ? setTheme('dark') : setTheme('light')
-// }
-
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+}
+const changeTheme=()=>{
+  if(theme==='light'){
+    setTheme('dark')
+  }else{
+    setTheme('light')
+  }
+}
     return(
       <SideBar>
+        <ThemeProvider theme={themes[theme]}>
       <div
         style={{
           display: "flex",
@@ -31,8 +39,10 @@ export default function MyApp({Component,pageProps}){
           justifyContent: "space-evenly",
         }}
       >
-          <Component theme={theme} setTheme={setTheme} {...pageProps} />
+          <Component theme={theme} changeTheme={()=>changeTheme()} setTheme={setTheme} {...pageProps} />
       </div>
+      <ToggleTheme theme={theme} changeTheme={changeTheme}></ToggleTheme>
+      </ThemeProvider>
       </SideBar>
     )
   }

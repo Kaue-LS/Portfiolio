@@ -1,5 +1,6 @@
 import * as S from '../../public/assets/styles/SideBar.style'
 import { useState } from 'react'
+import {AiFillCaretLeft,AiFillCaretRight} from 'react-icons/ai'
 export default function SideBar({children}){
     const [open,setOpen]=useState(false)
     const OpenBar=(props)=>{
@@ -65,7 +66,7 @@ export default function SideBar({children}){
             </S.Topics>
         </S.SideBarMobile>
         <S.Button>
-        <button  onClick={()=>OpenBar(!open)}><span className={open?'fa fa-angle-left':'fa fa-angle-right'}></span></button>
+       <span  onClick={()=>OpenBar(!open)}> {open?<AiFillCaretLeft/>:<AiFillCaretRight/>}</span>
         </S.Button>
         </S.SideButton>
         {children}

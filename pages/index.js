@@ -2,26 +2,19 @@ import Head from "next/head";
 import * as S from '../public/assets/styles/Home.style'
 import Bio from "../Components/Bio/Bio";
 import Project from "../Components/project/Card/Card";
-import SideBar from "../Components/Global/SideBar";
+// import SideBar from "../Components/Global/SideBar";
 import { getAllPosts} from '../Lib/Projects'
 import Skills from "../Components/Skills/Skills";
 import Wave from "../Components/Global/Wave";
 import Carousel from "../Components/Carousel/Carousel";
-import ToggleTheme from "../Components/Global/ToggleTheme";
 
 
 // Página principal do projeto
-export default function Home({allPosts,theme,setTheme}) {
+export default function Home({allPosts,theme,setTheme,changeTheme}) {
   const heroPost = allPosts
   console.log(setTheme)
 
-  const changeTheme=()=>{
-    if(theme==='light'){
-      setTheme('dark')
-    }else{
-      setTheme('light')
-    }
-  }
+
   return (
     <S.ThemeProvider >
   {/* // Barra de pesquisa, tanto a web e reponsiva */}
@@ -32,10 +25,7 @@ export default function Home({allPosts,theme,setTheme}) {
         <meta lang="pt" xmlns="http://www.w3.org/1999/xhtml"/>
         <link rel="icon" href="./public/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        ></link>
+      
       </Head>
 
 {/* Fundo animado */}
@@ -61,7 +51,7 @@ export default function Home({allPosts,theme,setTheme}) {
         <S.Title>Kauê Leite</S.Title>
         <S.SubTitle>Portfólio</S.SubTitle>
       </S.Texts>
-    <S.Content bgColor={theme==='dark'?'#171717':'#ffffff'} fontColor={theme==='dark'?'#ffffff':'#171717'}>
+    <S.Content >
 {/* Bio sobre mim */}
       <S.BioArea id="Bio">
       <h1 id="Title-Project">Sobre mim:</h1>
@@ -74,8 +64,6 @@ export default function Home({allPosts,theme,setTheme}) {
       <Carousel>
           {heroPost.map((item,index)=>(
              <Project key={index}
-              bgColor={theme==='dark'?'#171717':'#ffffff'} 
-              fontColor={theme==='dark'?'#ffffff':'#171717'}
                title={item.title}
                id={item.id}
                coverImage={item.coverImage}
@@ -95,7 +83,7 @@ export default function Home({allPosts,theme,setTheme}) {
         </S.SkillsArea>
   
         </S.Content>
-        <ToggleTheme theme={theme} changeTheme={()=>changeTheme()}></ToggleTheme>
+       
 
       </S.Main>
       </S.ThemeProvider>

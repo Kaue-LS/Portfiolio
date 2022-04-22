@@ -222,8 +222,8 @@ export const SkillsArea = styled.section`
 `
 
 export const Content=styled.div`
-  background-color: ${(props)=>props.bgColor};
-  color: ${(props)=>props.fontColor};
+  background-color: ${(props)=>props.theme.pageBackground};
+  color: ${(props)=>props.theme.titleColor};
 `
 export const ThemeProvider=styled.div`
   
