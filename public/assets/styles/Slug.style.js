@@ -17,7 +17,6 @@ export const Back=styled.div`
 border-bottom-left-radius:10px ;
 border-bottom-right-radius:10px ;
 
-background-color: white;
     padding:15px 30px ;
     color:white;
     font-size:1.5rem;

@@ -7,14 +7,24 @@ import { getAllPosts} from '../Lib/Projects'
 import Skills from "../Components/Skills/Skills";
 import Wave from "../Components/Global/Wave";
 import Carousel from "../Components/Carousel/Carousel";
+import ToggleTheme from "../Components/Global/ToggleTheme";
 
 
 // Página principal do projeto
-export default function Home({allPosts}) {
+export default function Home({allPosts,theme,setTheme}) {
   const heroPost = allPosts
+  console.log(setTheme)
+
+  const changeTheme=()=>{
+    if(theme==='light'){
+      setTheme('dark')
+    }else{
+      setTheme('light')
+    }
+  }
   return (
-  // Barra de pesquisa, tanto a web e reponsiva
-  <SideBar >
+    <S.ThemeProvider >
+  {/* // Barra de pesquisa, tanto a web e reponsiva */}
   {/* Header da página */}
       <Head>
         <title>Porfólio Kaue-LS</title>
@@ -51,7 +61,7 @@ export default function Home({allPosts}) {
         <S.Title>Kauê Leite</S.Title>
         <S.SubTitle>Portfólio</S.SubTitle>
       </S.Texts>
-    <S.Content>
+    <S.Content bgColor={theme==='dark'?'#171717':'#ffffff'} fontColor={theme==='dark'?'#ffffff':'#171717'}>
 {/* Bio sobre mim */}
       <S.BioArea id="Bio">
       <h1 id="Title-Project">Sobre mim:</h1>
@@ -64,6 +74,8 @@ export default function Home({allPosts}) {
       <Carousel>
           {heroPost.map((item,index)=>(
              <Project key={index}
+              bgColor={theme==='dark'?'#171717':'#ffffff'} 
+              fontColor={theme==='dark'?'#ffffff':'#171717'}
                title={item.title}
                id={item.id}
                coverImage={item.coverImage}
@@ -83,9 +95,10 @@ export default function Home({allPosts}) {
         </S.SkillsArea>
   
         </S.Content>
+        <ToggleTheme theme={theme} changeTheme={()=>changeTheme()}></ToggleTheme>
+
       </S.Main>
-      
-    </SideBar>
+      </S.ThemeProvider>
   );
 }
 

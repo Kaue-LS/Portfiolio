@@ -162,7 +162,6 @@ font-size: 6rem;
   }
   `
 export const BioArea=styled.section`
-  background-color: white;
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -186,7 +185,6 @@ export const BioArea=styled.section`
 `
 
 export const ProjectArea=styled.section`
-   /* background-color: white; */
    width: 1000px;
    margin: 0 auto;
    overflow: hidden;
@@ -208,7 +206,6 @@ export const ProjectArea=styled.section`
 `
 
 export const SkillsArea = styled.section`
- background-color: white;
   width: 90%;
   margin: 0 auto;
   padding:10px 50px ;
@@ -225,6 +222,10 @@ export const SkillsArea = styled.section`
 `
 
 export const Content=styled.div`
-  background-color: white;
+  background-color: ${(props)=>props.bgColor};
+  color: ${(props)=>props.fontColor};
+`
+export const ThemeProvider=styled.div`
   
+
 `

@@ -3,12 +3,12 @@ import * as S from '../../../public/assets/styles/Projects.style'
 import CoverImage from "../../Global/CoverImages";
 import  Date from './date'
 export default function Card(dadosDosPost){
-    console.log(dadosDosPost.id)
+    // console.log(dadosDosPost.id)
 
     // Card dos projetos que serão mostrados na principal
     return(
       
-        <S.Project id={"Card-"+dadosDosPost.id}>
+        <S.Project bgColor={dadosDosPost.bgColor} fontColor={dadosDosPost.fontColor} id={"Card-"+dadosDosPost.id}>
         <Link as={`/posts/${dadosDosPost.slug}`} href={`/posts/[slug]`}>
 
             <S.Card>
