@@ -1,6 +1,7 @@
 ---
 title: 'Cadastro de clientes'
 utilizado: 'Projeto feito com modelo M.E.R.N  STACK com banco de dados mongoose na própria máquina, a página contém painel de administrador e página destinada para clientes.'
+id: 1
 coverImage: '/assets/img/Cadastro.jpg'
 projectUrl: 'https://github.com/Kaue-LS/Projeto-M.E.R.N'
 date: '2022-03-08T05:35:07.322Z'

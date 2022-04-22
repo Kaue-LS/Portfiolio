@@ -1,4 +1,4 @@
-import * as S from '../../public/assets/styles/Slug'
+import * as S from '../../public/assets/styles/Slug.style'
 
 export default function Footer({post}) {
   return (

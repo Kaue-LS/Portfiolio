@@ -2,18 +2,11 @@ import"../public/assets/styles/Globals.css";
 
 
 
-function SafeHydrate({ children }) {
-  return (
-    <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : children}
-    </div>
-  )
-}
+
 export default function MyApp({Component,pageProps}){
 
  
     return(
-      <SafeHydrate>
       <div
         style={{
           display: "flex",
@@ -23,7 +16,6 @@ export default function MyApp({Component,pageProps}){
       >
           <Component {...pageProps} />
       </div>
-    </SafeHydrate>
 
     )
   }

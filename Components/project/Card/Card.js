@@ -1,12 +1,14 @@
 import Link from "next/link";
-import * as S from '../../../public/assets/styles/Projects'
+import * as S from '../../../public/assets/styles/Projects.style'
 import CoverImage from "../../Global/CoverImages";
 import  Date from './date'
 export default function Card(dadosDosPost){
-    console.log(dadosDosPost)
+    console.log(dadosDosPost.id)
+
+    // Card dos projetos que serão mostrados na principal
     return(
       
-        <S.Project>
+        <S.Project id={"Card-"+dadosDosPost.id}>
         <Link as={`/posts/${dadosDosPost.slug}`} href={`/posts/[slug]`}>
 
             <S.Card>

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import * as S from '../../public/assets/styles/Slug'
+import * as S from '../../public/assets/styles/Slug.style'
 export default function Footer({children}) {
   return (
     <S.Back>

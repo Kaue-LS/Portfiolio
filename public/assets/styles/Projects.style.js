@@ -3,14 +3,12 @@ import styled from 'styled-components'
 
 export const Project =styled.div`
 background-color:#ffffff;
-width:40% ;
-height:30rem ;
-box-shadow: 0px 0px 10px ;
+margin: 0 30px 0 0px;
 border-radius:10px ;
+width: 300px;
+height: 400px;
 overflow:hidden ;
-margin:20px 0 ;
 @media(max-width:780px){
-    width:17rem ;
     height:auto ;
   }
 `;

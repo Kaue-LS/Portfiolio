@@ -18,7 +18,7 @@ export const Background=styled.ul`
   list-style: none;
   font-size:10rem ;
   color: #ffffff60;
-
+  border-radius:100% ;
 
 
   animation: animate 19s linear infinite;
@@ -34,20 +34,20 @@ export const Background=styled.ul`
 }
 
 100%{
-    transform: translateY(-1000px) rotate(720deg);
+    transform: translateY(-800px) rotate(360deg);
     opacity: 0;
 }
 
 }
   :nth-child(0){
-    left: 7%;
+    left: 10%;
   width: 122px;
   height: 122px;
   bottom: -122px;
   animation-delay: 1s;
   }
   :nth-child(1) {
-    left: 77%;
+    left: 60%;
   width: 160px;
   height: 160px;
   bottom: -160px;
@@ -75,7 +75,7 @@ export const Background=styled.ul`
   animation-delay: 1s;
   }
   :nth-child(5) {
-    left: 4%;
+    left: 20%;
   width: 194px;
   height: 194px;
   bottom: -194px;
@@ -123,14 +123,15 @@ export const Main=styled.main`
   overflow: hidden;
   margin: 0 0 0 auto ;
   width: 80%;
-  @media(max-width:760px) {
+  @media(max-width:768px) {
 
     width:100% ;
   }
 `
 
 export const Texts=styled.div`
-width: 100%;
+width: 90%;
+margin: 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -160,8 +161,10 @@ font-size: 6rem;
 
   }
   `
-export const ProjectArea=styled.div`
+export const BioArea=styled.section`
   background-color: white;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -180,11 +183,34 @@ export const ProjectArea=styled.div`
     padding:0 0px;
     text-transform:uppercase;
   }
+`
+
+export const ProjectArea=styled.section`
+   /* background-color: white; */
+   width: 1000px;
+   margin: 0 auto;
+   overflow: hidden;
+  @media(max-width:780px){
+    width: 600px;
+  }
+  @media(max-width:480px){
+    width: 300px;
+    justify-content:center ;
+  }
+  #Title-Project{
+    width:100%;
+    font-weight:900 ;
+    font-size:2.5rem ;
+    margin:0 0 30px 65px;
+    text-transform:uppercase;
+  }
 
 `
 
-export const SkillsArea = styled.div`
-  background-color: white;
+export const SkillsArea = styled.section`
+ background-color: white;
+  width: 90%;
+  margin: 0 auto;
   padding:10px 50px ;
   @media(max-width:780px){
     padding: 0px 20px ;
@@ -196,4 +222,9 @@ export const SkillsArea = styled.div`
     font-size:2.5rem ;
     text-transform:uppercase;
   }
+`
+
+export const Content=styled.div`
+  background-color: white;
+  
 `

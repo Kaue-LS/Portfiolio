@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Bio=styled.div`
 
     background-color: white;
-    padding: 1rem 3rem;
     
 `
 
@@ -13,7 +12,7 @@ export const Title=styled.h1`
     font-size:2.5rem ;
 
 `
-export const Paragraph=styled.div`
+export const Paragraph=styled.article`
 p{
     text-align: justify;
     line-height: 30px;

@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import * as S from "../../public/assets/styles/Slug";
+import * as S from "../../public/assets/styles/Slug.style";
 import Footer from "../../Components/slug/Footer";
 import Layout from "../../Components/slug/Layout";
 import { getAllPosts, getPostBySlug } from "../../Lib/Projects";

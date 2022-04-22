@@ -1,4 +1,4 @@
-import * as S from '../../public/assets/styles/SideBar'
+import * as S from '../../public/assets/styles/SideBar.style'
 import { useState } from 'react'
 export default function SideBar({children}){
     const [open,setOpen]=useState(false)

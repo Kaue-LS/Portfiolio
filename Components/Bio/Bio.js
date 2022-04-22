@@ -1,9 +1,8 @@
-import * as S from "../../public/assets/styles/Bio";
+import * as S from "../../public/assets/styles/Bio.style";
 export default function Bio() {
   return (
     <div>
       <S.Bio id="Bio">
-        <S.Title>Sobre Mim</S.Title>
         <S.Paragraph>
           <p>
             Meu nome é <strong>Kauê Leite</strong>, nasci moro na cidade de <strong>São Paulo</strong> na zona

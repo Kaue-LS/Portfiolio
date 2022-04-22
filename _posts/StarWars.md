@@ -2,6 +2,7 @@
 title: 'Star Wars'
 utilizado: 'Projeto de trabalho final do primeiro módulo da Blue Edtech.'
 coverImage: '/assets/img/StarWars.jpg'
+id: 6
 projectUrl: 'https://github.com/Kaue-LS/Projeto-Blue-IF'
 date: '2022-03-08T05:35:07.322Z'
 tools: 'Python'

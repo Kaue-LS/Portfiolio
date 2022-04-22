@@ -2,6 +2,7 @@
 title: 'Chainsaw Man'
 utilizado: 'Objetivo de desenvolver uma API com o banco de dados criado pela BLUE EDTECH e utiliza-la em projeto React.js.'
 coverImage: '/assets/img/Chainsaw.jpg'
+id: 2
 projectUrl: 'https://github.com/Kaue-LS/Projeto-temaLivre'
 date: '2022-03-08T05:35:07.322Z'
 tools: 'React.js / Rest API / SCSS / Styled-Components '

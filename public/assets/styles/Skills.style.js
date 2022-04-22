@@ -21,7 +21,7 @@ export const Container = styled.div`
   align-items: center;
   width: 50%;
   padding: 10px 10px;
-  p {
+  label {
     width: 100%;
     font-weight:700 ;
   }
@@ -39,14 +39,21 @@ export const Box = styled.div`
   border:2px solid ;
   box-shadow:0px 5px 5px gray ;
 
-  .skills {
+ 
+  div{
+    width: ${(props)=>props.width};
+    background-color: #00f0ff;
+    text-align: right;
+    padding: 5px 5px;
+
+    span {
     text-align: right; /* Right-align text */
-    padding: 10px 10px;
     color: black;
-  
+    padding: 10px 10px;
+
     font-weight:700; /* White text color */
   }
-
+  }
   .html {
     width: 80%;
     background-color: #00f0ff;
