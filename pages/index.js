@@ -7,12 +7,13 @@ import { getAllPosts} from '../Lib/Projects'
 import Skills from "../Components/Skills/Skills";
 import Wave from "../Components/Global/Wave";
 import Carousel from "../Components/Carousel/Carousel";
+// import Form from "../Components/Form/Form";
 
 
 // Página principal do projeto
-export default function Home({allPosts,theme,setTheme,changeTheme}) {
+export default function Home({allPosts}) {
   const heroPost = allPosts
-  console.log(setTheme)
+  // console.log(setTheme)
 
 
   return (
@@ -81,10 +82,12 @@ export default function Home({allPosts,theme,setTheme,changeTheme}) {
       <h1 id="Title-Skills">Habilidades</h1>
           <Skills></Skills>
         </S.SkillsArea>
-  
+            
+          {/* <S.FormArea>
+            <Form/>
+          </S.FormArea> */}
         </S.Content>
        
-
       </S.Main>
       </S.ThemeProvider>
   );

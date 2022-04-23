@@ -228,7 +228,11 @@ export const Content=styled.div`
   background-color: ${(props)=>props.theme.pageBackground};
   color: ${(props)=>props.theme.titleColor};
 `
-export const ThemeProvider=styled.div`
-  
-
+export const ThemeProvider=styled.div``
+export const FormArea=styled.div`
+  background-color: wheat;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 `

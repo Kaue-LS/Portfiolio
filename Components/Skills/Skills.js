@@ -43,6 +43,21 @@ percent:'20%'
 },
 {name:'MySQL',
 percent:'50%'    
+},
+{name:'Next.js',
+percent:'60%'    
+}
+,
+{name:'BEM CSS',
+percent:'50%'    
+}
+,
+{name:'CSS3',
+percent:'40%'    
+}
+,
+{name:'HTML5',
+percent:'50%'    
 }
   ]
   return (

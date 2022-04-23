@@ -3,16 +3,9 @@ import React,{useState} from "react";
 import { ThemeProvider } from "styled-components";
 import SideBar from "../Components/Global/SideBar";
 import ToggleTheme from "../Components/Global/ToggleTheme";
+import {DarkTheme,LightTheme} from '../Components/Theme/Theme'
 
 
-const LightTheme={
-  pageBackground:'white',
-  titleColor:"#000000",
-}
-const DarkTheme={
-  pageBackground:'#171717',
-  titleColor:"#ffffff",
-}
 const themes={
   light:LightTheme,
   dark:DarkTheme
@@ -39,7 +32,7 @@ const changeTheme=()=>{
           justifyContent: "space-evenly",
         }}
       >
-          <Component theme={theme} changeTheme={()=>changeTheme()} setTheme={setTheme} {...pageProps} />
+          <Component {...pageProps} />
       </div>
       <ToggleTheme theme={theme} changeTheme={changeTheme}></ToggleTheme>
       </ThemeProvider>

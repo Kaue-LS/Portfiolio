@@ -112,6 +112,7 @@ export const Topics=styled.div`
         }
     }
     li{
+        cursor: pointer;
         font-weight: 700;
         font-size: 1.2rem;
         color: #ffffff;
