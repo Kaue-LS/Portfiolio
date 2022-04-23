@@ -19,7 +19,7 @@ export default function Home({allPosts,theme,setTheme,changeTheme}) {
     <S.ThemeProvider >
   {/* // Barra de pesquisa, tanto a web e reponsiva */}
   {/* Header da página */}
-      <Head>
+      <Head >
         <title>Porfólio Kaue-LS</title>
         <meta name="description" content="Portfólio" />
         <meta lang="pt" xmlns="http://www.w3.org/1999/xhtml"/>

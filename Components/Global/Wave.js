@@ -12,7 +12,7 @@ export default function Wave() {
         id="svg"
         viewBox="0 0 1440 500"
         xmlns="http://www.w3.org/2000/svg"
-        class="transition duration-300 ease-in-out delay-150"
+        className="transition duration-300 ease-in-out delay-150"
       >
         <defs>
           <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
@@ -25,7 +25,7 @@ export default function Wave() {
           stroke="none"
           stroke-width="0"
           fill="url(#gradient)"
-          class="transition-all duration-300 ease-in-out delay-150 path-0"
+          className="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
         <defs>
           <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
@@ -38,7 +38,7 @@ export default function Wave() {
           stroke="none"
           stroke-width="0"
           fill="url(#gradient)"
-          class="transition-all duration-300 ease-in-out delay-150 path-1"
+          className="transition-all duration-300 ease-in-out delay-150 path-1"
         ></path>
         <defs>
           <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
@@ -51,7 +51,7 @@ export default function Wave() {
           stroke="none"
           stroke-width="0"
           fill="url(#gradient)"
-          class="transition-all duration-300 ease-in-out delay-150 path-2"
+          className="transition-all duration-300 ease-in-out delay-150 path-2"
         ></path>
         <defs>
           <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%">
@@ -64,7 +64,7 @@ export default function Wave() {
           stroke="none"
           stroke-width="0"
           fill="url(#gradient)"
-          class="transition-all duration-300 ease-in-out delay-150 path-3"
+          className="transition-all duration-300 ease-in-out delay-150 path-3"
         ></path>
       </svg>
     </div>

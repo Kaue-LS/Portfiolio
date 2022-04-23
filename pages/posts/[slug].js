@@ -9,6 +9,7 @@ import CoverImage from "../../Components/Global/CoverImages";
 import Header from "../../Components/slug/Header";
 export default function Post({ post }) {
   const router = useRouter();
+  // console.log(router)
   if (!router.isFallback && !post?.slug) {
     return <h1>Deu ruim</h1>;
   }

@@ -201,6 +201,9 @@ export const ProjectArea=styled.section`
     font-size:2.5rem ;
     margin:0 0 30px 65px;
     text-transform:uppercase;
+    @media(max-width:480px){
+      margin: 0 0 30px auto;
+  }
   }
 
 `

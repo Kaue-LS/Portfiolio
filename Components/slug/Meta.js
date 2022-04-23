@@ -10,7 +10,7 @@ export default function Meta({post}) {
       <meta
         name="description"
       />
-     <link rel="icon" href="../public/favicon.ico" />
+     <link rel="icon" href="../public/favicon.icon" />
       <meta lang='pt-BR'></meta>
       <title>{post}</title>
     </Head>
