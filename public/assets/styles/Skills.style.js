@@ -54,7 +54,7 @@ export const Box = styled.div`
     font-weight:700; /* White text color */
   }
   }
-  .html {
+  /* .html {
     width: 80%;
     background-color: #00f0ff;
     box-shadow:0px 0px 10px  #00f0ff ;
@@ -119,5 +119,5 @@ export const Box = styled.div`
     background-color: #00f0ff;
     box-shadow:0px 0px 10px  #00f0ff ;
     border-radius: 20px;
-  }
+  } */
 `;
