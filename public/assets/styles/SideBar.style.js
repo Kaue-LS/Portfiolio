@@ -14,7 +14,7 @@ export const Button=styled.div`
             display: block;
             position: fixed;
             z-index: 999999;
-            margin: 250px 255px;
+            margin: 300px 0 0 242px;
             /* button{
             
             height: 70px;
@@ -52,22 +52,23 @@ position:fixed ;
     box-shadow: 0px 0px 30px;
     z-index: 999999;
     @media (max-width:768px) {
-    display:none ;
+        transition:400ms;
+        margin:${(props)=>props.moveBar};
     }
 `
-export const SideBarMobile=styled.div`
-    display: none;
-    @media (max-width:768px) {    
-    background-color: #171717;
-    width: 16rem;
-    position: fixed;
-    z-index: 999999;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+// export const SideBarMobile=styled.div`
+//     display: none;
+//     @media (max-width:768px) {    
+//     background-color: #171717;
+//     width: 16rem;
+//     position: fixed;
+//     z-index: 999999;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
     
-    }
-`
+//     }
+// `
 
 export const PerfilLinks=styled.div`
     margin: 20px auto;
