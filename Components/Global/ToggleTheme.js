@@ -3,7 +3,7 @@ import {MdOutlineDarkMode,MdOutlineLightMode} from 'react-icons/md'
 export default function ToggleTheme(props){
     return(
         <S.ToggleButton>
-            {props.theme==='dark'?<MdOutlineDarkMode onClick={props.changeTheme}/>:<MdOutlineLightMode onClick={props.changeTheme}/>}
+            {props.theme==='dark'?<MdOutlineLightMode onClick={props.changeTheme}/>:<MdOutlineDarkMode onClick={props.changeTheme}/>}
         </S.ToggleButton>
     )
 }
