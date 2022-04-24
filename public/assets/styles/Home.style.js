@@ -121,10 +121,12 @@ export const Main=styled.main`
   justify-content: center;
   align-content: center;
   overflow: hidden;
+  position: absolute;
+  right: 0;
   margin: 0 0 0 auto ;
   width: 80%;
   @media(max-width:768px) {
-
+    position: relative;
     width:100% ;
   }
 `
@@ -169,7 +171,15 @@ export const BioArea=styled.section`
   flex-wrap: wrap;
   justify-content: space-between; 
   padding :0 3rem ;
+  @media(max-width:820px){
+    @media(max-width:1024px){
+  margin: 0  30px 0 auto;
+
+    width: 500px;
+  }
+  }
   @media(max-width:780px){
+    margin: 0 auto;
     padding:0 2rem ;
   }
   @media(max-width:480px){
@@ -185,21 +195,26 @@ export const BioArea=styled.section`
 `
 
 export const ProjectArea=styled.section`
-   width: 1000px;
+   width: 1050px;
    margin: 0 auto;
    overflow: hidden;
+   @media(max-width:820px){
+  margin: 0  120px 0 auto;
+    width: 450px;
+  }
   @media(max-width:780px){
     width: 600px;
+    margin: 0 auto;
   }
   @media(max-width:480px){
-    width: 300px;
+    width: 450px;
     justify-content:center ;
   }
   #Title-Project{
     width:100%;
     font-weight:900 ;
     font-size:2.5rem ;
-    margin:0 0 30px 65px;
+    margin:0 0 30px 86px;
     text-transform:uppercase;
     @media(max-width:480px){
       margin: 0 0 30px auto;
@@ -212,7 +227,12 @@ export const SkillsArea = styled.section`
   width: 90%;
   margin: 0 auto;
   padding:10px 50px ;
+  @media(max-width:820px){
+  margin: 0  30px 0 auto;
+    width: 500px;
+  }
   @media(max-width:780px){
+    margin: 0 auto;
     padding: 0px 20px ;
 
   }

@@ -8,7 +8,7 @@ export default function SideBar({children,home}){
     const router= useRouter()
     const rota=((router.pathname).toString())
  
-    console.log(typeof(rota))
+    // console.log(typeof(rota))
     const OpenBar=(props)=>{
         if(props){
             setOpen(props)
@@ -48,7 +48,6 @@ export default function SideBar({children,home}){
                 <a href='#Bio'><li>Bio</li></a>
                 <a href='#Projetos'><li>Projetos</li></a>
                 <a href='#Habilidades'><li>Habilidades</li></a>
-                <p>{rota}</p>
                 {/* <a href='#FaleComigo'><li>Fale comigo</li></a> */}
             </ul>
             </nav>
@@ -86,7 +85,6 @@ export default function SideBar({children,home}){
                 <a href='#Bio'><li>Bio</li></a>
                 <a href='#Projetos'><li>Projetos</li></a>
                 <a href='#Habilidades'><li>Habilidades</li></a>
-                <p>{rota}</p>
                 {/* <a href='#FaleComigo'><li>Fale comigo</li></a> */}
             </ul>
             </nav>

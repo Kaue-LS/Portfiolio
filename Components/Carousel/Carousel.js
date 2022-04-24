@@ -1,6 +1,6 @@
-import styles from "../../public/assets/styles/Carousel.module.css";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import * as S from '../../public/assets/styles/Carousel.style'
 
 export default function CarouselSystem({ children }) {
   const responsive = {
@@ -15,7 +15,7 @@ export default function CarouselSystem({ children }) {
     },
     tablet: {
       breakpoint: { max: 1024, min: 478 },
-      items: 2
+      items: 1
     },
     mobile: {
       breakpoint: { max: 478, min: 0 },
@@ -23,8 +23,8 @@ export default function CarouselSystem({ children }) {
     }
   };
  return(
-   <Carousel className={styles.Carousel} autoPlay={false} responsive={responsive} shouldResetAutoplay={true}>
+   <S.CarouselBox autoPlay={false} responsive={responsive} shouldResetAutoplay={true}>
   {children}
-</Carousel>
+</S.CarouselBox>
   )
 }

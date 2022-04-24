@@ -1,8 +1,11 @@
 export const LightTheme={
     pageBackground:'white',
-    titleColor:"#000000",
-  }
+    titleColor:"#171717",
+   skillsColor:"#0ff0ff"
+}
  export  const DarkTheme={
     pageBackground:'#171717',
-    titleColor:"#ffffff",
+    titleColor:"#dfdfdf",
+     skillsColor:"#00f0ff70"
+     
   }

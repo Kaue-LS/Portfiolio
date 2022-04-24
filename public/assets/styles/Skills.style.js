@@ -42,15 +42,14 @@ export const Box = styled.div`
  
   div{
     width: ${(props)=>props.width};
-    background-color: #00f0ff;
+    background-color: ${(props)=>props.theme.skillsColor};
     text-align: right;
-    padding: 5px 5px;
+    padding: 8px 10px;
 
     span {
     text-align: right; /* Right-align text */
-    color: black;
     padding: 10px 10px;
-
+    color: ${(props)=>props.theme.titleColor};
     font-weight:700; /* White text color */
   }
   }

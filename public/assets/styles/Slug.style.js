@@ -6,9 +6,15 @@ width: 80%;
   right: 0;
   margin: 0rem 0 0 auto;
   padding: 20px 20px;
-
+  @media (max-width: 1024px) {
+    padding: 10px 10px;
+    width: 60%;
+    position: relative;
+    margin: 0 30px 0 auto;
+  }
   @media (max-width: 780px) {
       position: relative;
+      margin: 0 auto;
     padding: 10px 10px;
     width: 100%;
   }
@@ -27,7 +33,8 @@ export const Back = styled.div`
   justify-content: center;
   align-items: center;
   button {
-    background-color: #121212;
+    background-color: ${(props) => props.theme.titleColor};
+  color: ${(props) => props.theme.pageBackground};
     margin: 0 auto;
     padding: 10px 10px;
     width: 50%;
@@ -38,19 +45,16 @@ export const Back = styled.div`
     :hover {
       background-color: #00f0ff;
       border-radius: 10px;
-      color: #bebebe;
       color: black;
     }
   }
   a {
-    color: #ffffff;
     font-size: 1.4rem;
   }
 `;
 
 export const Header = styled.div`
   padding: 10px 10px;
-  color: white;
 
   font-weight: 700;
   display: flex;
@@ -59,7 +63,7 @@ export const Header = styled.div`
   align-items: center;
   h1 {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #dedede;
     text-shadow: 0px 0px 10px #bebebe;
     font-weight: 900;
     font-size: 2.8rem;
