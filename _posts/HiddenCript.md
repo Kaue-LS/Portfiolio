@@ -5,10 +5,16 @@ coverImage: '/assets/img/HiddenCript.jpg'
 id: 3
 projectUrl: 
 date: '2022-03-08T05:35:07.322Z'
-tools: 'HTML / CSS / JavaScript / BootStrap / Node.js'
+tools: 'HTML | CSS | JavaScript | Bootstrap | Node.js'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
+
+## Ferramentas utilizadas:
+- ### [Node.js](https://nodejs.org/en/) 
+- ### [Bootstrap](https://getbootstrap.com/)
+
+
 
 Foi uma nova ferramenta de encriptação desenvolvida para proteger dados secretos de grandes empresas, com objetivo de combater os vazamentos de dados causados por cyber-ataques.
 

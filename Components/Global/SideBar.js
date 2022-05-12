@@ -29,7 +29,7 @@ export default function SideBar({children,home}){
     }
 
     return(
-        <div style={{display:'flex',flexDirection:'row'}}>
+        <div style={{width:'100%'}} >
         <S.SideBar moveBar={open?('0 0;'):('0  0 0 -16rem;')}>
 
             

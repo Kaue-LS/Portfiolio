@@ -16,8 +16,9 @@ export default function Post({ post }) {
 
   return (
     <S.Slug>
-      <Header post={post.title}/>
       <Layout post={post.title}>
+      <Header post={post.title}/>
+
         {router.isFallback ? (
           <h2>Loading…</h2>
         ) : (
@@ -36,7 +37,7 @@ export default function Post({ post }) {
               <span>{post.tools}</span>
               </div>
               <div>
-              <p>Link do projeto: </p> {post.projectUrl?(<a target="_blank" rel="noopener noreferrer"  href={post.projectUrl}>Aqui</a>):(<span>Sem link  <img src="https://img.icons8.com/windows/32/000000/oops.png"/></span>)}
+              {post.projectUrl?(<a target="_blank" rel="noopener noreferrer" href={post.projectUrl}>Link do projeto aqui.</a>):(<p>Sem link do projeto... </p>)}
               </div>
             </S.Data>
               <Article content={post.content} />

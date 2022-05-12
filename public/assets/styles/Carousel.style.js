@@ -10,6 +10,10 @@ export const CarouselBox = styled(Carousel)`
   .react-multiple-carousel__arrow--left {
     left: calc(4% - 22px);
     z-index: 999999;
+    @media (max-width: 1024px) {
+      left: calc(1% + 10px);
+
+    }
     @media (max-width: 820px) {
       left: calc(4% + 2px);
     }
@@ -23,15 +27,26 @@ export const CarouselBox = styled(Carousel)`
   }
 
   .react-multiple-carousel__arrow--right {
+    right: calc(4% - 22px);
+    z-index: 999999;
+    @media (max-width: 1024px) {
+      right: calc(1% - 10px);
+    }
+    @media (max-width: 820px) {
+      right: calc(4% + 2px);
+    }
     @media (max-width: 768px) {
       display: none;
-      left: calc(4% - 10px);
+      right: calc(4% - 10px);
+    }
+    @media (max-width: 478px) {
+      right: calc(4% - 10px);
     }
   }
   
   @media (max-width: 820px) {
     width: 100%;
-    margin: 0 100px;
+    margin: 0 auto 0 100px;
     padding: 10px 5px;
   }
   @media (max-width: 768px) {

@@ -12,9 +12,6 @@ const themes={
 }
 export default function MyApp({Component,pageProps}){
   const [theme,setTheme]=useState('light')
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-}
 const changeTheme=()=>{
   if(theme==='light'){
     setTheme('dark')
@@ -26,11 +23,7 @@ const changeTheme=()=>{
       <SideBar>
         <ThemeProvider theme={themes[theme]}>
       <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-evenly",
-        }}
+    
       >
           <Component {...pageProps} />
       </div>

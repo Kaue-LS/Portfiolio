@@ -10,7 +10,12 @@ width: 300px;
 height: 400px;
 margin:0 20px ;
 overflow:hidden ;
-
+@media(max-width:1024px){
+    box-shadow: none;
+    border: 2px solid black;
+    height:400px ;
+margin:0 200px;
+  }
 
 @media(max-width:780px){
     box-shadow: none;

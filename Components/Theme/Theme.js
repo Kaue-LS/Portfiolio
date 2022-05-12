@@ -5,7 +5,7 @@ export const LightTheme={
 }
  export  const DarkTheme={
     pageBackground:'#171717',
-    titleColor:"#dfdfdf",
-     skillsColor:"#00f0ff70"
+    titleColor:"#f2f2f2",
+     skillsColor:"#00f0ff90"
      
   }

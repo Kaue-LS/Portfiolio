@@ -5,7 +5,7 @@ coverImage: '/assets/img/Chainsaw.jpg'
 id: 2
 projectUrl: 'https://github.com/Kaue-LS/Projeto-temaLivre'
 date: '2022-03-08T05:35:07.322Z'
-tools: 'React.js / Rest API / SCSS / Styled-Components '
+tools: 'React.js | Rest API | SCSS | Styled-Components '
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
@@ -13,6 +13,13 @@ ogImage:
 O objetivo era criar uma api feita pela Blue Edtech para realizar criação de una página com tema escolhido, eu decidi utilizar o tema de um mangá conhecido, Chainsaw Man.
 
 Para administrar a API eu utilizei o **Insomnia**.
+
+
+## Ferramentas utilizadas:
+- ### [React.js ](https://reactjs.org/) 
+- ### [SCSS](https://sass-lang.com/documentation)
+- ### [Styled-Components](https://styled-components.com/)
+- ### [Insomnia](https://insomnia.rest/)
 
 ## Estrutura:
 

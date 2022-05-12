@@ -171,12 +171,10 @@ export const BioArea=styled.section`
   flex-wrap: wrap;
   justify-content: space-between; 
   padding :0 3rem ;
-  @media(max-width:820px){
     @media(max-width:1024px){
-  margin: 0  30px 0 auto;
+  margin: 0  auto;
 
     width: 500px;
-  }
   }
   @media(max-width:780px){
     margin: 0 auto;
@@ -184,6 +182,7 @@ export const BioArea=styled.section`
   }
   @media(max-width:480px){
     justify-content:center ;
+    width: 100%;
   }
   #Title-Project{
     width:100%;
@@ -198,6 +197,11 @@ export const ProjectArea=styled.section`
    width: 1050px;
    margin: 0 auto;
    overflow: hidden;
+   @media(max-width:1024px){
+  margin: 0  auto 0 80px;
+
+    width: 500px;
+  }
    @media(max-width:820px){
   margin: 0  120px 0 auto;
     width: 450px;
@@ -207,7 +211,6 @@ export const ProjectArea=styled.section`
     margin: 0 auto;
   }
   @media(max-width:480px){
-    width: 450px;
     justify-content:center ;
   }
   #Title-Project{
@@ -234,6 +237,10 @@ export const SkillsArea = styled.section`
   @media(max-width:780px){
     margin: 0 auto;
     padding: 0px 20px ;
+
+  }
+  @media(max-width:478px){
+    width: 100%;
 
   }
 #Title-Skills{

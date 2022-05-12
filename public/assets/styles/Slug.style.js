@@ -4,6 +4,7 @@ export const Slug = styled.div`
 position: absolute;
 width: 80%;
   right: 0;
+  background-color: #d9d9d540;
   margin: 0rem 0 0 auto;
   padding: 20px 20px;
   @media (max-width: 1024px) {
@@ -23,7 +24,7 @@ width: 80%;
 export const Back = styled.div`
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
+  background-color: ${(props) => props.theme.pageBackground};
   padding: 15px 30px;
   color: white;
   font-size: 1.5rem;
@@ -55,16 +56,18 @@ export const Back = styled.div`
 
 export const Header = styled.div`
   padding: 10px 10px;
-
+  background-color: cadetblue;
   font-weight: 700;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   display: flex;
+  background-color: ${(props) => props.theme.pageBackground};
+  color: ${(props) => props.theme.titleColor};
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   h1 {
     text-transform: uppercase;
-    color: #dedede;
-    text-shadow: 0px 0px 10px #bebebe;
     font-weight: 900;
     font-size: 2.8rem;
     margin: 0px auto;
@@ -80,14 +83,12 @@ export const Header = styled.div`
   }
 `;
 export const Post = styled.div`
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+ 
   background-color: ${(props) => props.theme.pageBackground};
   color: ${(props) => props.theme.titleColor};
   padding: 10px 0px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 0px 10px  ${(props) => props.theme.titleColor};;
 `;
 
 export const Image = styled.div`
@@ -111,6 +112,7 @@ export const Data = styled.div`
   }
   p {
     font-size: 1.5rem;
+    font-weight: 700;
   }
   span {
     font-weight: 700;
@@ -120,7 +122,6 @@ export const Data = styled.div`
   a {
     text-decoration: underline;
     padding: 5px 5px;
-    margin: 0 0px 0 20px;
     font-size: 1.5rem;
     font-weight: 700;
 
