@@ -22,11 +22,7 @@ const changeTheme=()=>{
     return(
       <SideBar>
         <ThemeProvider theme={themes[theme]}>
-      <div
-    
-      >
           <Component {...pageProps} />
-      </div>
       <ToggleTheme theme={theme} changeTheme={changeTheme}></ToggleTheme>
       </ThemeProvider>
       </SideBar>

@@ -41,25 +41,23 @@ export default function Home({allPosts}) {
           <li>{"{K}"}</li>
           <li>{"{K}"}</li>
           <li>{"{K}"}</li>
-        </S.Background>
         <Wave></Wave>     
+        </S.Background>
 {/* ---------------------- */}
       
 
 {/* Componentes de texto da página */}
-      <S.Main>
       <S.Texts>
         <S.Title>Kauê Leite</S.Title>
         <S.SubTitle>Portfólio</S.SubTitle>
       </S.Texts>
+      
     <S.Content >
-{/* Bio sobre mim */}
       <S.BioArea id="Bio">
       <h1 id="Title-Project">Sobre mim:</h1>
       <Bio ></Bio>
       </S.BioArea>
 
-{/* Area dos projetos */}
       <S.ProjectArea id={'Projetos'}>
       <h1 id="Title-Project">Projetos:</h1>
       <Carousel>
@@ -77,18 +75,13 @@ export default function Home({allPosts}) {
           </Carousel>
         </S.ProjectArea>
 
-{/* Area das habilidades */}
         <S.SkillsArea id="Habilidades">
       <h1 id="Title-Skills">Habilidades</h1>
           <Skills></Skills>
         </S.SkillsArea>
             
-          {/* <S.FormArea>
-            <Form/>
-          </S.FormArea> */}
-        </S.Content>
+    </S.Content>
        
-      </S.Main>
       </S.ThemeProvider>
   );
 }

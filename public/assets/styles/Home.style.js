@@ -115,69 +115,77 @@ export const Background=styled.ul`
   `
 
 
-export const Main=styled.main`
- display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
-  position: absolute;
-  right: 0;
-  margin: 0 0 0 auto ;
-  width: 80%;
-  @media(max-width:768px) {
-    position: relative;
-    width:100% ;
-  }
+export const Content=styled.div`
+  background-color: ${(props)=>props.theme.pageBackground};
+  color: ${(props)=>props.theme.titleColor};
 `
-
 export const Texts=styled.div`
-width: 90%;
-margin: 0 auto;
+width: 80%;
+margin: 0  0 0 auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
 
+  @media (max-width:1024px) {
+    width: 70%;
+    margin: 0  0 0 auto;
+    }
+  @media (max-width:768px) {
+    width: 100%;
+    margin: 0 auto;
+    }
 `
 
 export const Title=styled.h1`
- font-size: 8rem;
+ font-size: 6rem;
+ text-align: center;
   color: #ffffff;
   text-shadow: 0px 0px 10px  #BEBEBE ;
+  @media(max-width:1024px){
+    font-size:5rem;
 
-  @media(max-width:780px){
+  }
+  @media(max-width:768px){
     font-size:4rem;
 
   }
 `
 
 export const SubTitle=styled.h3`
-font-size: 6rem;
+font-size: 8rem;
   color: #ffffff;
   text-shadow: 0px 0px 10px  #BEBEBE ;
+  @media(max-width:1024px){
+    font-size:6rem;
 
+  }
   @media(max-width:780px){
     font-size:4rem;
 
   }
+  @media(max-width:480px){
+    font-size:3rem;
+
+  }
   `
 export const BioArea=styled.section`
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0  0 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between; 
   padding :0 3rem ;
     @media(max-width:1024px){
-  margin: 0  auto;
+  margin: 0  0 0 auto;
 
-    width: 500px;
+    width:70%;
   }
   @media(max-width:780px){
     margin: 0 auto;
+    width: 100%;
     padding:0 2rem ;
   }
   @media(max-width:480px){
@@ -194,20 +202,20 @@ export const BioArea=styled.section`
 `
 
 export const ProjectArea=styled.section`
-   width: 1050px;
-   margin: 0 auto;
+   margin: 0  0 0 auto;
    overflow: hidden;
+   width: 80%;
    @media(max-width:1024px){
-  margin: 0  auto 0 80px;
+     width: 76%;
+  margin: 0  0 0 auto;
 
-    width: 500px;
   }
    @media(max-width:820px){
+   width: 80%;
+
   margin: 0  120px 0 auto;
-    width: 450px;
   }
   @media(max-width:780px){
-    width: 600px;
     margin: 0 auto;
   }
   @media(max-width:480px){
@@ -227,8 +235,8 @@ export const ProjectArea=styled.section`
 `
 
 export const SkillsArea = styled.section`
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 0 0 auto;
   padding:10px 50px ;
   @media(max-width:820px){
   margin: 0  30px 0 auto;
@@ -251,11 +259,8 @@ export const SkillsArea = styled.section`
   }
 `
 
-export const Content=styled.div`
-  background-color: ${(props)=>props.theme.pageBackground};
-  color: ${(props)=>props.theme.titleColor};
-`
-export const ThemeProvider=styled.div``
+
+export const  ThemeProvider=styled.div``
 export const FormArea=styled.div`
   background-color: wheat;
   width: 80%;

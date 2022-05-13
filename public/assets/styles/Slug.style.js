@@ -4,14 +4,13 @@ export const Slug = styled.div`
 position: absolute;
 width: 80%;
   right: 0;
-  background-color: #d9d9d540;
   margin: 0rem 0 0 auto;
   padding: 20px 20px;
   @media (max-width: 1024px) {
     padding: 10px 10px;
-    width: 60%;
+    width: 75%;
     position: relative;
-    margin: 0 30px 0 auto;
+    margin: 0 0 0 auto;
   }
   @media (max-width: 780px) {
       position: relative;
@@ -96,8 +95,6 @@ export const Image = styled.div`
   background-color: #f4f4f4;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
 `;
 
 export const Data = styled.div`
